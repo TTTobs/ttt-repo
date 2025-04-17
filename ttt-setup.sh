@@ -7,7 +7,7 @@
 pacman -Syu --noconfirm
 
 #Install general software packages
-pacman -S wine discord firefox vlc mupdf --noconfirm
+pacman -S wine discord firefox vlc --noconfirm
 
 #Install required libs for functions
 pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome --noconfirm
