@@ -4,7 +4,7 @@
 # HYPERLAND CONFIG FILES CURLS #
 ################################
 #pacman -Syu nano
-# Install the necessary packages
+#Install the necessary packages
 #pacman -S hyprland hyprpaper hyprlock
 
 # Define the configuration path and hypr folder path
