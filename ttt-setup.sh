@@ -5,7 +5,7 @@
 ################################
 pacman -Syu nano --noconfirm
 #Install the necessary packages
-pacman -S hyprland hyprpaper hyprlock --noconfirm
+pacman -S hyprland hyprpaper hyprlock waybar--noconfirm
 
 # Define the configuration path and hypr folder path
 config_path="/home/ttt/.config"
