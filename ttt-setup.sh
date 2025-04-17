@@ -3,7 +3,7 @@
 ################################
 # HYPERLAND CONFIG FILES CURLS #
 ################################
-pacman -Syu nano
+#pacman -Syu nano
 # Install the necessary packages
 #pacman -S hyprland hyprpaper hyprlock
 
