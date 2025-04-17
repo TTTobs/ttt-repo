@@ -4,7 +4,7 @@
 ################################
 # HYPERLAND CONFIG FILES CURLS #
 ################################
-pacman -S hyprland hyprpaper hyprlock
+#pacman -S hyprland hyprpaper hyprlock
 
 echo "installed libs"
 
