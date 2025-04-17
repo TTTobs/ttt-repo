@@ -36,4 +36,4 @@ curl -o "$waybar_path/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/
 curl -o "$waybar_path/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_style.css
 
 #Download Kitty configs
-curl -o "$waybar_path/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
+curl -o "kitty_path/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
