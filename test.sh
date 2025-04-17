@@ -1,4 +1,4 @@
 #! /bin/bash
 
-mkdir /home/ttt-test
-echo "testfile" > /home/ttt-test/ttt-test.test
+sudo mkdir /home/ttt-test
+sudo echo "testfile" > /home/ttt-test/ttt-test.test
