@@ -12,9 +12,6 @@ pacman -S wine discord firefox vlc mupdf --noconfirm
 #Install required libs for functions
 pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome --noconfirm
 
-#Install AUR manager
-pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
-
 #Install the necessary packages for desktop env
 pacman -S hyprland hyprpaper hyprlock waybar --noconfirm
 
