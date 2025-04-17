@@ -6,8 +6,8 @@
 ################################
 pacman -S hyprland hyprpaper hyprlock
 
-mkdir -p /home/$USER/.config/hypr
-cd /home/$USER/.config/hypr
+mkdir -p /home/ttt/.config/hypr
+cd /home/ttt/.config/hypr
 
 curl http://raw.githubusercontent.com/TTTobs/ttt-repo/refs/heads/main/hyprland.conf > hyprland.conf
 curl http://raw.githubusercontent.com/TTTobs/ttt-repo/refs/heads/main/hyprlock.conf > hyprlock.conf
