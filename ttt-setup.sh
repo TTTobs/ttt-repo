@@ -3,14 +3,26 @@
 ################################
 # HYPERLAND CONFIG FILES CURLS #
 ################################
-pacman -Syu nano --noconfirm
-#Install the necessary packages
+#updates System
+pacman -Syu --noconfirm
+
+#Install general software packages
+pacman -S wine discord firefox vlc mupdf --noconfirm
+
+#Install required libs for functions
+pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome --noconfirm
+
+#Install AUR manager
+pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+
+#Install the necessary packages for desktop env
 pacman -S hyprland hyprpaper hyprlock waybar --noconfirm
 
 # Define the configuration path and hypr folder path
 config_path="/home/ttt/.config"
 hypr_path="$config_path/hypr"
 waybar_path="$config_path/waybar"
+kitty_path="$config_path/kitty"
 
 # Create the hypr folder if it doesn't exist
 mkdir -p "$hypr_path" "$waybar_path"
@@ -32,4 +44,5 @@ curl -o "$hypr_path/arasaka_wp.jpg" https://raw.githubusercontent.com/TTTobs/ttt
 curl -o "$waybar_path/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_config
 curl -o "$waybar_path/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_style.css
 
-
+#Download Kitty configs
+curl -o "$waybar_path/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
