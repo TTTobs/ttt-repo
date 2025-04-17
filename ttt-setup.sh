@@ -21,12 +21,6 @@ hypr_path="$config_path/hypr"
 waybar_path="$config_path/waybar"
 kitty_path="$config_path/kitty"
 
-# Create the hypr folder if it doesn't exist
-mkdir -p "$hypr_path" "$waybar_path"
-
-# Navigate to the hypr folder
-cd "$hypr_path"
-
 # Print the current working directory
 echo $(pwd)
 
