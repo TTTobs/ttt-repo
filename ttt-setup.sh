@@ -10,7 +10,7 @@ pacman -Syu --noconfirm
 pacman -S wine discord firefox vlc --noconfirm
 
 #Install required libs for functions
-pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome --noconfirm
+pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome neovim --noconfirm
 
 #Install the necessary packages for desktop env
 pacman -S hyprland hyprpaper hyprlock waybar --noconfirm
@@ -20,9 +20,6 @@ config_path="/home/ttt/.config"
 hypr_path="$config_path/hypr"
 waybar_path="$config_path/waybar"
 kitty_path="$config_path/kitty"
-
-# Print the current working directory
-echo $(pwd)
 
 # Download the configuration files using curl
 #Download Hyprland configs
@@ -36,4 +33,4 @@ curl -o "$waybar_path/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/
 curl -o "$waybar_path/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_style.css
 
 #Download Kitty configs
-curl -o "kitty_path/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
+curl -o "$kitty_path/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
