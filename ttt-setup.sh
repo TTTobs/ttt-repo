@@ -6,6 +6,8 @@
 ################################
 pacman -S hyprland hyprpaper hyprlock
 
+echo "installed libs"
+
 mkdir -p /home/ttt/.config/hypr
 cd /home/ttt/.config/hypr
 
