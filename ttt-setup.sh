@@ -3,7 +3,7 @@
 ################################
 # HYPERLAND CONFIG FILES CURLS #
 ################################
-
+pacman -Syu
 # Install the necessary packages
 pacman -S hyprland hyprpaper hyprlock
 
@@ -11,6 +11,8 @@ pacman -S hyprland hyprpaper hyprlock
 config_path="/home/ttt/.config"
 hypr_path="$config_path/hypr"
 
+echo $config_path
+echo $hyprpath
 # Create the hypr folder if it doesn't exist
 mkdir -p "$hypr_path"
 
