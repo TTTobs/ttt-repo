@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Hardcoded power profile options
+# Hardcoded power profile option
 rofi_options=("balanced" "performance" "power-saver")
 
 # Get the currently active profile (for highlighting)
