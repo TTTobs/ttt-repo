@@ -35,7 +35,7 @@ curl -o "$hypr_path/arasaka_wp.jpg" https://raw.githubusercontent.com/TTTobs/ttt
 curl -o "$config_path/waybar/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_config
 curl -o "$config_path/waybar/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_style.css
 curl -o "$config_path/waybar/rofi_power.sh" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/rofi_power.sh
-curl -o "$config_path/waybar/rofi_power.sh" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/power_menu.sh
+curl -o "$config_path/waybar/power_menu.sh" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/power_menu.sh
 
 cd "$config_path/waybar"
 chmod +x rofi_power.sh
