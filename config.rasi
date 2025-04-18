@@ -1,0 +1,30 @@
+configuration {
+  font: "Cascadia Code 12";
+  show-icons:                     false;
+  display-drun:                   "Applications";
+  drun-display-format:            "{name}";
+}
+
+/**
+ * COLOR SCHEME
+ *
+ * You only need to modify the color values directly below.
+ * Each color is defined using a hexadecimal code (#RRGGBB)
+ * or a named X color.
+ */
+
+* {
+  background-color:               rgba (0,0,0,0.75);
+  foreground-color:               #ffffff;
+  normal-background:              #000000;
+  normal-foreground:              #ffffff;
+  selected-normal-background:     #ff0000;
+  selected-normal-foreground:     #000000;
+  active-background:              #ff0000;
+  active-foreground:              #000000;
+  urgent-background:              #ff0000;
+  urgent-foreground:              #000000;
+  border-color:                    #ff0000;
+  alternate-normal-background:    #000000;
+  alternate-normal-foreground:    #ffffff;
+}
