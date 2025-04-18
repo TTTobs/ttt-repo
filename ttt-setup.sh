@@ -13,7 +13,7 @@ pacman -S wine discord firefox vlc --noconfirm
 pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome neovim --noconfirm
 
 #Install the necessary packages for desktop env
-pacman -S hyprland hyprpaper hyprlock waybar --noconfirm
+pacman -S hyprland hyprpaper hyprlock waybar rofi --noconfirm
 
 # Define the configuration path and hypr folder path
 config_path="/home/ttt/.config"
@@ -34,11 +34,12 @@ curl -o "$hypr_path/arasaka_wp.jpg" https://raw.githubusercontent.com/TTTobs/ttt
 #Download Waybar configs
 curl -o "$config_path/waybar/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_config
 curl -o "$config_path/waybar/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_style.css
+curl -o "$config_path/waybar/rofi_power.sh" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/rofi_power.sh
 
 #Download Kitty configs
 curl -o "$config_path/kitty/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
 
-#Wofi menu config
-curl -o "$config_path/wofi/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/wofi_style.css
+#rofi menu config
+#curl -o "$config_path/rofi/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/rofi_style.css
 
 
