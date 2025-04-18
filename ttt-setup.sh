@@ -18,7 +18,11 @@ pacman -S hyprland hyprpaper hyprlock waybar --noconfirm
 # Define the configuration path and hypr folder path
 config_path="/home/ttt/.config"
 hypr_path="$config_path/hypr"
-waybar_path="$config_path/waybar"
+
+#make directorys (sometimes needed idfk)
+mkdir -p $config_path
+cd $config_path
+mkdir -p hypr waybar kitty wofi
 
 # Download the configuration files using curl
 #Download Hyprland configs
