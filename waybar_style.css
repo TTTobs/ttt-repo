@@ -35,7 +35,7 @@ window#waybar {
     border-bottom: 3px solid #ffffff;
 }
 
-#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+#clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor, #custom-power_button{
     padding: 0 10px;
     margin: 0 5px;
 }
@@ -77,6 +77,8 @@ window#waybar {
     /*background: #2ecc71;*/
     color: #e5e9f0;
 }
+
+
 
 #memory {
     /*background: #9b59b6;*/
@@ -141,4 +143,12 @@ window#waybar {
 #idle_inhibitor.activated {
     background-color: #ecf0f1;
     color: #2d3436;
+}
+
+#custom-power_button{
+    color: #e5e9f0;
+    background: #ff0000;
+    padding: 10 10px;
+    margin: 0 10px;
+    border-radius: 4px;
 }
