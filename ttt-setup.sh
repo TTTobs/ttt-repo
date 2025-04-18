@@ -19,7 +19,6 @@ pacman -S hyprland hyprpaper hyprlock waybar --noconfirm
 config_path="/home/ttt/.config"
 hypr_path="$config_path/hypr"
 waybar_path="$config_path/waybar"
-kitty_path="$config_path/kitty"
 
 # Download the configuration files using curl
 #Download Hyprland configs
@@ -29,8 +28,13 @@ curl -o "$hypr_path/hyprpaper.conf" https://raw.githubusercontent.com/TTTobs/ttt
 curl -o "$hypr_path/arasaka_wp.jpg" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/arasaka_wp.jpg
 
 #Download Waybar configs
-curl -o "$waybar_path/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_config
-curl -o "$waybar_path/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_style.css
+curl -o "$config_path/waybar/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_config
+curl -o "$config_path/waybar/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_style.css
 
 #Download Kitty configs
-curl -o "$kitty_path/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
+curl -o "$config_path/kitty/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
+
+#Wofi menu config
+curl -o "$config_path/wofi/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/wofi_style.css
+
+
