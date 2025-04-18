@@ -9,11 +9,11 @@ pacman -Syu --noconfirm
 #Install general software packages
 pacman -S wine discord firefox vlc --noconfirm
 
-#Install required libs for functions
-pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome neovim --noconfirm
-
 #Install the necessary packages for desktop env
 pacman -S hyprland hyprpaper hyprlock waybar rofi --noconfirm
+
+#Install required libs for functions
+pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome neovim pavucontrol --noconfirm
 
 # Define the configuration path and hypr folder path
 config_path="/home/ttt/.config"
