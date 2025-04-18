@@ -1,7 +1,7 @@
 {
     "layer": "top", // Waybar at top layer
     "modules-left": ["hyprland/workspaces"],
-    "modules-right": ["tray", "backlight", "network", "pulseaudio", "battery", "clock"],
+    "modules-right": ["backlight", "network", "pulseaudio", "battery", "clock","custom/power_button"],
     "tray": {
         // "icon-size": 21,
         "spacing": 10
@@ -23,15 +23,16 @@
         "format-icons": ["", ""]
     },
     "battery": {
-        //"states": {
-        //    // "good": 95,
-        //    "warning": 30,
-        //    "critical": 15
-        //},
-        "format": "　{capacity}%"
+        "states": {
+	      "good": 80,
+              "warning": 30,
+              "critical": 15
+        },
+        "format": "{icon}　{capacity}%",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
-        //"format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+	"on-click":"/home/ttt/.config/waybar/rofi_power.sh"
     },
     "network": {
         // "interface": "wlp2s0", // (Optional) To force the use of this interface
@@ -41,7 +42,7 @@
     },
     "pulseaudio": {
         //"scroll-step": 1,
-        "format": "　{volume}%",
+        "format": "{icon}　{volume}%",
         "format-bluetooth": "{volume}% {icon}",
         "format-muted": "",
         "format-icons": {
@@ -66,6 +67,12 @@
      "4":"4",
      "default": "..."
      }
-     }
-    
+},
+
+ "custom/power_button": { // This section was likely missing or incorrectly placed
+    "format": "", // Power icon (requires a font like Font Awesome or Nerd Fonts)
+    "tooltip": true,
+    "tooltip-format": "Show Power Menu",
+    "on-click": "~/.config/waybar/power_menu.sh" // Path to your power menu script
+  }
 }
