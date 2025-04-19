@@ -7,7 +7,7 @@
 pacman -Syu --noconfirm
 
 #Install general software packages
-pacman -S wine discord firefox vlc --noconfirm
+pacman -S wine discord firefox vlc libreoffice-fresh --noconfirm
 
 #Install the necessary packages for desktop env
 pacman -S hyprland hyprpaper hyprlock waybar rofi --noconfirm
