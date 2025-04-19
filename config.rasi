@@ -1,5 +1,5 @@
 configuration {
-  font: "Cascadia Code 12";
+  font: "JetBrains Mono Bold 12";
   show-icons:                     false;
   display-drun:                   "Applications";
   drun-display-format:            "{name}";
@@ -14,17 +14,17 @@ configuration {
  */
 
 * {
-  background-color:               rgba (0,0,0,0.75);
+  background:               rgba (0,0,0,0.70);
   foreground-color:               #ffffff;
-  normal-background:              #000000;
+  normal-background:              rgba (0,0,0,0);
   normal-foreground:              #ffffff;
-  selected-normal-background:     #ff0000;
+  selected-normal-background:     rgba (255,0,0,0.75);
   selected-normal-foreground:     #000000;
-  active-background:              #ff0000;
+  active-background:              rgba (255,0,0,0.75);
   active-foreground:              #000000;
-  urgent-background:              #ff0000;
+  urgent-background:              rgba (255,0,0,0.75);
   urgent-foreground:              #000000;
-  border-color:                    #ff0000;
-  alternate-normal-background:    #000000;
+  border-color:                   #ff0000;
+  alternate-normal-background:    rgba (0,0,0,0);
   alternate-normal-foreground:    #ffffff;
 }
