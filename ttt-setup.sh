@@ -27,29 +27,29 @@ mkdir -p hypr waybar kitty rofi neofetch
 
 # Download the configuration files using curl
 #Download Hyprland configs
-curl -o "$hypr_path/hyprland.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/hyprland.conf
-curl -o "$hypr_path/hyprlock.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/hyprlock.conf
-curl -o "$hypr_path/hyprpaper.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/hyprpaper.conf
-curl -o "$hypr_path/arasaka_wp.jpg" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/arasaka_wp.jpg
+curl -o "$hypr_path/hyprland.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/hypr/hyprland.conf
+curl -o "$hypr_path/hyprlock.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/hypr/hyprlock.conf
+curl -o "$hypr_path/hyprpaper.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/hypr/hyprpaper.conf
+curl -o "$hypr_path/arasaka_wp.jpg" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/hypr/arasaka_wp.jpg
 
 #Download Waybar configs
-curl -o "$config_path/waybar/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_config
-curl -o "$config_path/waybar/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar_style.css
-curl -o "$config_path/waybar/rofi_power.sh" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/rofi_power.sh
-curl -o "$config_path/waybar/power_menu.sh" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/power_menu.sh
+curl -o "$config_path/waybar/config" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar/waybar_config
+curl -o "$config_path/waybar/style.css" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar/waybar_style.css
+curl -o "$config_path/waybar/rofi_power.sh" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar/rofi_power.sh
+curl -o "$config_path/waybar/power_menu.sh" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/waybar/power_menu.sh
 
 cd "$config_path/waybar"
 chmod +x rofi_power.sh
 chmod +x power_menu.sh
 
 #Download Kitty configs
-curl -o "$config_path/kitty/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty.conf
+curl -o "$config_path/kitty/kitty.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/kitty/kitty.conf
 
 #rofi menu config
-curl -o "$config_path/rofi/config.rasi" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/config.rasi
+curl -o "$config_path/rofi/config.rasi" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/rofi/config.rasi
 
 #neofetch config
-curl -o "$config_path/neofetch/config.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/config.conf
+curl -o "$config_path/neofetch/config.conf" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/neofetch/config.conf
 
 #bashrc file
 curl -o "$home_path/.bashrc" https://raw.githubusercontent.com/TTTobs/ttt-repo/main/.bashrc
