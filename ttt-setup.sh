@@ -13,7 +13,7 @@ pacman -S wine discord firefox vlc libreoffice-fresh --noconfirm
 pacman -S hyprland hyprpaper hyprlock waybar rofi neofetch --noconfirm
 
 #Install required libs for functions
-pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome neovim pavucontrol --noconfirm
+pacman -S power-profiles-daemon grim slurp wl-clipboard cifs-utils ttf-font-awesome neovim pavucontrol bluetui --noconfirm
 
 # Define the configuration path and hypr folder path
 home_path="/home/ttt"
